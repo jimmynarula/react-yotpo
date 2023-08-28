@@ -11,8 +11,9 @@ export type HtmlScript = {
 
 const YOTPO_SCRIPTS: HtmlScript[] = [
   {
-    src: `//staticw2.yotpo.com/${process.env.YOTPO_API_KEY}/widget.js`,
+    src: `//cdn-widgetsrepository.yotpo.com/v1/loader/${process.env.YOTPO_API_KEY}`,
     type: 'text/javascript',
+    async: true,
     defer: true
   }
 ];

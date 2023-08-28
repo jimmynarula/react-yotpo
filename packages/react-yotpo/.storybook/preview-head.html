@@ -4,8 +4,9 @@
 />
 <script>
   const yotpoScript = document.createElement('script');
-  yotpoScript.src = '//staticw2.yotpo.com/%YOTPO_API_KEY%/widget.js';
-  yotpoScript.type = 'text/javascript';
+  yotpoScript.src = '//cdn-widgetsrepository.yotpo.com/v1/loader/%YOTPO_API_KEY%';
+  yotpoScript.type = 'text/javascript'
+  async = true;
 
   document.head.append(yotpoScript);
 </script>
